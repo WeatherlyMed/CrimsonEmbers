@@ -1,0 +1,24 @@
+*Title: Crimson Embers*
+#Setting:
+##In a dystopian world ruled by a totalitarian regime, the government controls every aspect of life, from the thoughts people think to the words they speak. The society is built upon suppression of knowledge, creativity, and individuality. Books are banned, art is destroyed, and anyone caught dissenting is reprogrammed or “disappeared.” Technology is heavily monitored, and citizens live in constant fear of being watched by the omnipresent surveillance system known as "The Eye."
+
+#Plot:
+##You play as Elias, a former government enforcer who once believed in the regime’s ideology. Trained to hunt down and destroy those who defy the laws, Elias was known for his ruthless efficiency. However, a traumatic incident during a raid leads him to question the morality of his actions. Haunted by his past, he decides to go rogue.
+
+##Elias discovers a secret underground network of rebels known as the "Crimson Embers." This group is dedicated to preserving the last remnants of knowledge and culture, hiding away banned books, artworks, and digital archives that hold the truth about the world before the regime took power. The Crimson Embers are led by Mira, a mysterious and determined figure who has dedicated her life to the cause.
+
+#Gameplay:
+##Exploration and Stealth: Navigate through the decaying city, avoiding surveillance drones and patrolling enforcers. The city is divided into sectors, each with its own unique challenges, such as patrolled industrial zones, heavily guarded government buildings, and the sewers where the Crimson Embers hide.
+
+#Item Collection: Before Elias can join the Crimson Embers in their mission to reach the hidden library, the Vault of Whispers, he must gather specific items crucial for their plan. These items include:
+
+##Access Codes from the government archives, required to bypass security systems. As a former enforcer, Elias knows where to find these codes, but getting them requires sneaking into his old workplace.
+##A High-Power EMP Device from the black market, necessary to disable the surveillance drones protecting key government facilities. Elias must navigate through the underworld, making deals with shady characters who don't trust easily.
+##Disguises and Forged Documents that will allow the Crimson Embers to infiltrate government buildings undetected. These can be obtained by bribing corrupt officials or by piecing together remnants from Elias' past operations.
+
+#Puzzle Solving: Throughout the game, Elias uncovers hidden caches of books, art, and other cultural artifacts. These items often contain puzzles or codes that, when solved, reveal more about the world’s history or lead to the discovery of new safe houses or rebel contacts.
+
+#Moral Choices: Players must make decisions that affect the outcome of the story. Will Elias use his knowledge of the regime to help the rebels, or will he revert to his old ways under pressure? Choices influence relationships with other characters, and the game features multiple endings based on these decisions.
+
+#Combat and Strategy: Although combat is not the primary focus, Elias can use his former training to neutralize threats. However, overt violence draws attention from The Eye, increasing the difficulty of evading capture. Players must balance when to fight and when to run.
+

@@ -81,16 +81,53 @@ void RPGCharacter::displayStatus() const {
     std::cout << "Position: (" << x << ", " << y << ")" << std::endl;
 }
 
-void RPGCharacter::displayIdleAnimation() {
-    std::cout << name << " is in idle animation." << std::endl;
+void RPGCharacter::render() {
+    SDL_Rect destRect = { x, y, 64, 64 };
+    SDL_Texture* currentTexture = nullptr;
+
+    if (status == Status::Idle) {
+        currentTexture = idleTextures[frame];
+    } else if (status == Status::RunningLeft) {
+        currentTexture = runningLeftTextures[frame];
+    } else if (status == Status::RunningRight) {
+        currentTexture = runningRightTextures[frame];
+    }
+
+    SDL_RenderCopy(renderer, currentTexture, nullptr, &destRect);
 }
 
-void RPGCharacter::displayRunningLeftAnimation() {
-    std::cout << name << " is in running left animation." << std::endl;
+SDL_Texture* RPGCharacter::loadTexture(const std::string &file) {
+    SDL_Texture* newTexture = nullptr;
+    SDL_Surface* loadedSurface = IMG_Load(file.c_str());
+    if (loadedSurface == nullptr) {
+        std::cerr << "Unable to load image " << file << "! SDL_image Error: " << IMG_GetError() << std::endl;
+    } else {
+        newTexture = SDL_CreateTextureFromSurface(renderer, loadedSurface);
+        if (newTexture == nullptr) {
+            std::cerr << "Unable to create texture from " << file << "! SDL Error: " << SDL_GetError() << std::endl;
+        }
+        SDL_FreeSurface(loadedSurface);
+    }
+    return newTexture;
 }
 
-void RPGCharacter::displayRunningRightAnimation() {
-    std::cout << name << " is in running right animation." << std::endl;
+void RPGCharacter::loadTextures() {
+    std::string basePath = "assets/" + name + "/";
+
+    idleTextures[0] = loadTexture(basePath + "idle_0.png");
+    idleTextures[1] = loadTexture(basePath + "idle_1.png");
+    idleTextures[2] = loadTexture(basePath + "idle_2.png");
+    idleTextures[3] = loadTexture(basePath + "idle_3.png");
+
+    runningLeftTextures[0] = loadTexture(basePath + "run_left_0.png");
+    runningLeftTextures[1] = loadTexture(basePath + "run_left_1.png");
+    runningLeftTextures[2] = loadTexture(basePath + "run_left_2.png");
+    runningLeftTextures[3] = loadTexture(basePath + "run_left_3.png");
+
+    runningRightTextures[0] = loadTexture(basePath + "run_right_0.png");
+    runningRightTextures[1] = loadTexture(basePath + "run_right_1.png");
+    runningRightTextures[2] = loadTexture(basePath + "run_right_2.png");
+    runningRightTextures[3] = loadTexture(basePath + "run_right_3.png");
 }
 
 int main() {

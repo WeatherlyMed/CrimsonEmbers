@@ -2,7 +2,7 @@
 #include <string>
 #include <map>
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include "SDL2_image-2.8.2/include/SDL_image.h"
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -28,10 +28,10 @@ public:
     }
 
     void loadWorldMap() {
-        worldMap[std::make_pair(0, 0)] = "assets/scene_00.png";
-        worldMap[std::make_pair(1, 0)] = "assets/scene_10.png";
-        worldMap[std::make_pair(0, 1)] = "assets/scene_01.png";
-        worldMap[std::make_pair(1, 1)] = "assets/scene_11.png";
+        worldMap[std::make_pair(0, 0)] = "assets/scenes/OfficeBuilding.png";
+        worldMap[std::make_pair(1, 0)] = "assets/scenes/OfficeBuilding.png";
+        worldMap[std::make_pair(0, 1)] = "assets/scenes/OfficeBuilding.png";
+        worldMap[std::make_pair(1, 1)] = "assets/scenes/OfficeBuilding.png";
     }
 
     void loadScene(int x, int y) {
